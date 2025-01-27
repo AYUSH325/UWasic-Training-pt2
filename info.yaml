@@ -1,17 +1,17 @@
 # Tiny Tapeout project information
 project:
-  title:        "8-Bit CPU"                                                   # Project title
-  author:       "University of Waterloo - Fall 2024 ECE 298A"                                              # Your name
-  discord:      ""                                                            # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A basic 8-bit CPU design building off the SAP-1"             # One line description of what your project does
-  language:     "Verilog"                                                     # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000                                                      # Clock frequency in Hz (or 0 if not applicable)
+  title: "8-Bit CPU" # Project title
+  author: "University of Waterloo - Fall 2024 ECE 298A" # Your name
+  discord: "" # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description: "A basic 8-bit CPU design building off the SAP-1" # One line description of what your project does
+  language: "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz: 50000000 # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "1x1" # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_8_bit_cpu_top"
+  top_module: "tt_um_ece298a_8_bit_cpu_top"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -27,7 +27,6 @@ project:
     - "input_mar_register.v"
     - "instruction_register.v"
     - "dff_mem.v"
-
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
@@ -60,6 +59,6 @@ pinout:
   uio[5]: "out_HF"
   uio[6]: ""
   uio[7]: ""
-  
+
 # Do not change!
 yaml_version: 6
